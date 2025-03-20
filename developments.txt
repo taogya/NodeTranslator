@@ -4,4 +4,6 @@ autopep8
 radon
 pip-licenses
 pygount
+memory_profiler
+matplotlib
 -r requirements.txt
