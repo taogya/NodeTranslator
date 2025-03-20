@@ -1,0 +1,3 @@
+[submodule "DearPyGuiWrapper"]
+    path = DearPyGuiWrapper
+    url = https://github.com/taogya/DearPyGuiWrapper.git
