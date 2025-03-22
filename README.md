@@ -32,7 +32,7 @@ You copy `NotoSansJP-VariableFont_wght.ttf` to [src](/src)
 cd src
 python main.py
 ```
-
+![demo](/resources/demo.mp4)
 
 
 # Note
