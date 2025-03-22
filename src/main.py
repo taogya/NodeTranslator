@@ -83,7 +83,10 @@ class NodeEditorWindow(dpg.Window):
             def translate_sync(text, src, dest):
                 return asyncio.run(translate(text, src, dest))
 
-            out_attr.object.value = translate_sync(in_attr.object.value, src=user_data[0], dest=user_data[1])
+            if in_attr.object.value:
+                out_attr.object.value = translate_sync(in_attr.object.value, src=user_data[0], dest=user_data[1])
+            else:
+                out_attr.object.value = ''
             self.node_editor.update_callback(out_attr.object.tag)
 
         self.node_editor: MyNodeEditor = MyNodeEditor()\
