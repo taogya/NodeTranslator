@@ -32,6 +32,8 @@ You copy `NotoSansJP-VariableFont_wght.ttf` to [src](/src)
 cd src
 python main.py
 ```
+https://github.com/user-attachments/assets/4167eccd-28de-4c4f-b377-9fbf043113d9
+
 
 
 # Note
