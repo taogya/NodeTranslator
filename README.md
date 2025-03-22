@@ -10,12 +10,13 @@ Translation with node programming.
 # Usage
 ## clone
 ```
-git clone --recurse-submodules https://github.com/taogya/NodeTranslator.git
+git clone https://github.com/taogya/NodeTranslator.git
+cd NodeTranslator
 ```
 
 ## create environment
 ```
-python 3.13 -m venv venv
+python3.13 -m venv venv
 . venv/bin/activate
 pip install -r requirements.txt
 ```

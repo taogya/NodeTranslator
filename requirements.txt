@@ -1,3 +1,3 @@
 dearpygui
-./DearPyGuiWrapper
+git+https://github.com/taogya/DearPyGuiWrapper.git
 googletrans
