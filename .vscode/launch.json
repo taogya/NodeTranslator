@@ -1,0 +1,43 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "type": "debugpy",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "program": "${workspaceFolder}/src/main.py",
+            "cwd": "${workspaceFolder}/src",
+            "justMyCode": false,
+            "args": [],
+        },
+        {
+            "name": "DebugMem",
+            "type": "debugpy",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "program": "${workspaceFolder}/venv/bin/mprof",
+            "env": {
+                "MPLBACKEND": "module://backend_interagg"
+            },
+            "cwd": "${workspaceFolder}/src",
+            "justMyCode": false,
+            "args": [
+                "run",
+                "main.py"
+            ],
+        },
+        {
+            "name": "MemPlot",
+            "type": "debugpy",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "program": "${workspaceFolder}/venv/bin/mprof",
+            "cwd": "${workspaceFolder}/src",
+            "justMyCode": false,
+            "args": [
+                "plot"
+            ],
+        },
+    ]
+}
