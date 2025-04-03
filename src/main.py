@@ -133,7 +133,7 @@ class NodeEditorWindow(dpg.Window):
 class MyViewPort(dpg.ViewPort):
     def build(self, minimized=False, maximized=False, **kwargs):
         with dpg.dpg_org.font_registry():
-            default_font = dpg.dpg_org.add_font('NotoSansJP-VariableFont_wght.ttf', 16)
+            default_font = dpg.dpg_org.add_font('NotoSansJP-VariableFont_wght.ttf', 20)
             dpg.dpg_org.add_font_range_hint(dpg.dpg_org.mvFontRangeHint_Japanese, parent=default_font)
             dpg.dpg_org.bind_font(default_font)
         return super().build(minimized, maximized, **kwargs)
